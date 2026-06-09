@@ -27,5 +27,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'React-jsi'
   s.dependency 'React-callinvoker'
+  s.dependency 'AMap2DMap'
   install_modules_dependencies(s)
 end

@@ -12,6 +12,11 @@ class HybridNitroAmap : HybridNitroAmapSpec {
   // UIView
   var view: UIView = UIView()
 
+
+  mapView = MAMapView(frame: view.bounds)
+//   mapView.delegate = self
+  view.addSubview(mapView)
+
   // Props
   var isRed: Bool = false {
     didSet {
