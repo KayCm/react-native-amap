@@ -3,11 +3,9 @@ import { View, StyleSheet } from 'react-native';
 import { NitroAmap } from 'react-native-nitro-amap';
 
 function App(): React.JSX.Element {
-  return (
-    <View style={styles.container}>
+  return (<View style={styles.container}>
         <NitroAmap isRed={true} style={styles.view} testID="nitro-amap" />
-    </View>
-  );
+    </View>);
 }
 
 const styles = StyleSheet.create({
@@ -17,8 +15,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   view: {
-    width: 200,
-    height: 200
+    width: 300,
+    height: 300,
+    // backgroundColor:'#789000'
   }});
 
 export default App;
